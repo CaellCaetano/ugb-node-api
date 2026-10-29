@@ -1,4 +1,4 @@
-const { Datatypes } = require("sequelize");
+const { DataTypes } = require("sequelize");
 
 const sequelize = require("../database/database.js");
 
@@ -21,7 +21,7 @@ const Hero = sequelize.define("Hero", {
     },
 
     power: {
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     }
 });
