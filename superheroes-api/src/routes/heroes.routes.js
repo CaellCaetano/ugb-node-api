@@ -6,6 +6,11 @@ const heroesController = require("../controllers/heroes.controller.js");
 router.get("/", heroesController.list);
 router.post("/", heroesController.create);
 
+router.get("/:id", heroesController.findById);
+router.put("/:id", heroesController.update);
+router.patch("/:id", heroesController.patch);
+router.delete("/:id", heroesController.remove);
+
 module.exports = router;
 
 
